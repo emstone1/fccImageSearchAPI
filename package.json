@@ -1,0 +1,21 @@
+{
+  "name": "fcc-imagesearchapi",
+  "version": "0.0.1",
+  "description": "Image search abstraction API project for FCC.",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emstone1/fccImageSearchAPI"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Ethan Stone",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^1.2.0",
+    "express": "^4.12.4",
+    "mongoose": "^4.1.0",
+    "request": "^2.75.0"
+  }
+}
