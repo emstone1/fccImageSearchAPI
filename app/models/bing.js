@@ -1,7 +1,9 @@
 'use strict';
 
 var request = require('request');
-var qs = require('querystring')
+var qs = require('querystring');
+var dotenv = require('dotenv');
+
 
 var bingRequest = function (searchterm, offset, callback)
 {request({
@@ -13,7 +15,7 @@ var bingRequest = function (searchterm, offset, callback)
     },
     method: 'GET',
     headers: {
-        "Ocp-Apim-Subscription-Key": "c0e6a84afb6a4fa7956b4aac7f5a234f"
+        "Ocp-Apim-Subscription-Key": process.env.BINGAPIKEY
     }
 }, function(error, response, body) {
     if (error) {
