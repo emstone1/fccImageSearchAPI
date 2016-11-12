@@ -15,7 +15,7 @@ var bingRequest = function (searchterm, offset, callback)
     },
     method: 'GET',
     headers: {
-        "Ocp-Apim-Subscription-Key": process.env.BINGAPIKEY
+        "Ocp-Apim-Subscription-Key": "c0e6a84afb6a4fa7956b4aac7f5a234f"
     }
 }, function(error, response, body) {
     if (error) {
